@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeisHard</title>
+    <link rel="stylesheet" href="css\bootstrap-grid.css">
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <img src="img/logo.png" alt="Logo" width="200" height="100" class="d-inline-block align-text-top logo">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#ods3">ODS 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#problema">Problema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#download">Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <section class="section_sobre" id="sobre">
+            <h1 class="titlez" style="padding-top: 2.5rem; text-align: center;">Sobre o projeto</h1>
+            <p>O projeto <span style="font-weight: bold;">LifeisHard</span> tem como objetivo principal
+                conscientizar a população quanto aos possíveis perigos que sua saúde é frequentemente exposta, com foco no público infantil, 
+                que na maioria dos casos, são as bases do risco, com sua falta de cuidado. Tudo através de 3 jogos interativos simples, os quais personificam uma doença cada, 
+                sempre visando o combate das mesmas.</p>
+        </section>
+
+        <section class="section_ods3" id="ods3">
+            <h1 class="titlez" style="padding-top: 2.5rem; text-align: center;">ODS 3</h1>
+            <div class="row">
+                <div class="col-md-8">
+                    <p id="txt_ods" style="font-size: larger;">O tema do projeto é referente ao Objetivo de Desenvolvimento Sustentável 3 da ONU. 
+                    A ODS 3 busca assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades. 
+                    Seu objetivo é reduzir a mortalidade, melhorar a saúde materna e infantil, combater doenças transmissíveis e não transmissíveis, 
+                    e garantir acesso universal à saúde de qualidade.</p>
+                </div>
+                <div class="col-md-4" >
+                    <figure class="ods-3">
+                        <img class="ods3" src="img/ods3.png" alt="" style="width: 30%">
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section_problema" id="problema">
+            <h1 class="titlez" style="padding-top: 2.5rem; text-align: center;">Problemas e justificativas</h1>
+            <p><span style="font-weight: bold;">Doenças transmissíveis:</span> Doenças como HIV/AIDS, tuberculose, malária e hepatites continuam a ser desafios, especialmente em regiões de baixa renda. Fatores como falta de saneamento básico, vacinas e tratamentos eficazes contribuem para sua propagação.</p>
+            <p><span style="font-weight: bold;">Doenças não transmissíveis:</span> Doenças como diabetes, câncer e doenças cardiovasculares estão em ascensão, principalmente devido ao envelhecimento populacional, estilos de vida não saudáveis (má alimentação, sedentarismo) e poluição ambiental.</p>
+            <p><span style="font-weight: bold;">Mortalidade materna e infantil:</span> Altas taxas de mortalidade durante o parto e no período neonatal, principalmente em países em desenvolvimento, resultam da falta de cuidados médicos adequados e infraestrutura hospitalar.</p>
+            <p><span style="font-weight: bold;">Saúde mental:</span> Problemas de saúde mental, como depressão e ansiedade, são cada vez mais comuns e negligenciados, especialmente em países onde o acesso a tratamento psicológico é limitado.</p>
+            <p><span style="font-weight: bold;">Acesso desigual aos serviços de saúde:</span> Desigualdades regionais, econômicas e sociais fazem com que populações marginalizadas tenham menor acesso a serviços médicos de qualidade, agravando disparidades de saúde.</p>
+        </section>
+
+        <section class="section_download" id="download">
+            <h1 class="titlez" style="padding-top: 2.5rem; text-align: center;">Download</h1>
+            <p>Clique aqui e teste o nosso jogo!</p>
+            <figure>
+                <a onclick="confirmDownload()"><img class="download" src="img/start.png" alt="download" style="width: 15%"></a>
+            </figure>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="align-items-center justify-content-between">
+                <div class="text-footer">Copyright &copy; LifeisHard 2024</div>
+                <div>
+                    <img class="enchelinguica" src="img/mcm.png" alt="mcm">
+                    <img class="enchelinguica" src="img/cps.png" alt="cps">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    function confirmDownload() {
+        if (confirm("Você quer baixar este arquivo?")) {
+            window.location.href = ".apk";
+        } 
+    }
+</script>
+
+</html>
